@@ -23,7 +23,7 @@ body {
 img { max-width: 100%; display: block; }
 button { font-family: inherit; cursor: pointer; }
 
-/* ===== Base: celular (mobile-first) ===== */
+
 .home {
   position: relative;
   width: 100%;
@@ -142,14 +142,14 @@ button { font-family: inherit; cursor: pointer; }
 
 button:focus-visible, input:focus-visible { outline: 3px solid var(--amarelo); outline-offset: 2px; }
 
-/* ===== Celulares muito pequenos ===== */
+
 @media (max-width: 359px) {
   .home { padding-left: 14px; padding-right: 14px; }
   .servicos { grid-template-columns: repeat(2, 1fr); }
   .destaque__icone { display: none; }
 }
 
-/* ===== Tablet: 2 colunas ===== */
+
 @media (min-width: 768px) {
   .home {
     max-width: 900px;
@@ -168,7 +168,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--amarelo); o
   .noticia h3 { font-size: 18px; max-width: 60ch; }
 }
 
-/* ===== Desktop: barra vira menu lateral ===== */
+
 @media (min-width: 1024px) {
   body { padding-left: 96px; }
 
@@ -195,7 +195,7 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--amarelo); o
   }
 }
 
-/* ===== Acessibilidade: respeita quem reduz movimento ===== */
+
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }

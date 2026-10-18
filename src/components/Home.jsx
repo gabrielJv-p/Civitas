@@ -69,7 +69,6 @@ export default function Home({ nome = "[nome]", etapaAtual = 2 }) {
       </nav>
 
       <article className="noticia">
-        {/* Troque pela imagem real: <img src={...} alt="" /> */}
         <p className="noticia__tag">Notícia</p>
         <h3>
           Prefeitura realiza recapeamento asfáltico na Avenida Renato de Castro
