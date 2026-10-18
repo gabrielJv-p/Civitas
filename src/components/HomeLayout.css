@@ -199,3 +199,9 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--amarelo); o
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+/* Remove o sublinhado dos Links de navegação */
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
