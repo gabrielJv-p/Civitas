@@ -3,6 +3,8 @@ import {
   House, List, Plus, User,
 } from "lucide-react";
 import "./HomeLayout.css";
+import { Link } from "react-router-dom";
+
 
 const servicos = [
   { id: "ouvidoria", rotulo: "Ouvidoria", icone: Headset, alerta: false },
@@ -80,17 +82,17 @@ export default function Home({ nome = "[nome]", etapaAtual = 2 }) {
           <House size={22} strokeWidth={1.8} aria-hidden="true" />
           Início
         </button>
-        <button className="barra__item">
+      <Link to="/Chamados" className="barra__item" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <List size={22} strokeWidth={1.8} aria-hidden="true" />
           Chamados
-        </button>
-        <button className="barra__fab" aria-label="Novo chamado">
+        </Link>
+        <Link to="/NovoChamado" className="barra__fab" aria-label="Novo chamado">
           <Plus size={24} strokeWidth={2.4} />
-        </button>
-        <button className="barra__item">
+        </Link>
+        <Link to="/Perfil" className="barra__item">
           <User size={22} strokeWidth={1.8} aria-hidden="true" />
           Perfil
-        </button>
+        </Link>
       </nav>
     </main>
   );
